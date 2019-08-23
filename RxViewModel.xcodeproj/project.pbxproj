@@ -10,14 +10,18 @@
 		1168B9BF1D2E089000784841 /* Observable_Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168B9BD1D2E089000784841 /* Observable_Operations.swift */; };
 		1168B9C01D2E089000784841 /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168B9BE1D2E089000784841 /* RxViewModel.swift */; };
 		1168B9C51D2E089600784841 /* RxViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1168B9C31D2E089600784841 /* RxViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E3456CFF1E67D2D0902934 /* Pods_RxViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4800CA76F7C9536056E9F4 /* Pods_RxViewModel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E29A646BFCC155439CB6E25 /* Pods-RxViewModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViewModel.release.xcconfig"; path = "Target Support Files/Pods-RxViewModel/Pods-RxViewModel.release.xcconfig"; sourceTree = "<group>"; };
 		1168B9B01D2E081800784841 /* RxViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1168B9BD1D2E089000784841 /* Observable_Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable_Operations.swift; sourceTree = "<group>"; };
 		1168B9BE1D2E089000784841 /* RxViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
 		1168B9C21D2E089600784841 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1168B9C31D2E089600784841 /* RxViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxViewModel.h; sourceTree = "<group>"; };
+		6D4B4DDD3B920D5AD5BC1BA2 /* Pods-RxViewModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViewModel.debug.xcconfig"; path = "Target Support Files/Pods-RxViewModel/Pods-RxViewModel.debug.xcconfig"; sourceTree = "<group>"; };
+		CA4800CA76F7C9536056E9F4 /* Pods_RxViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E3456CFF1E67D2D0902934 /* Pods_RxViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 				1168B9C11D2E089600784841 /* Supporting Files */,
 				1168B9BB1D2E089000784841 /* Source */,
 				1168B9B11D2E081800784841 /* Products */,
+				AB07E1781AC03FEEE53D6073 /* Pods */,
+				7A0766F3E47BFD419AD7A384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,24 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7A0766F3E47BFD419AD7A384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA4800CA76F7C9536056E9F4 /* Pods_RxViewModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB07E1781AC03FEEE53D6073 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B4DDD3B920D5AD5BC1BA2 /* Pods-RxViewModel.debug.xcconfig */,
+				0E29A646BFCC155439CB6E25 /* Pods-RxViewModel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -92,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1168B9B81D2E081800784841 /* Build configuration list for PBXNativeTarget "RxViewModel" */;
 			buildPhases = (
+				F9DF53136D650D9103529063 /* [CP] Check Pods Manifest.lock */,
 				1168B9AB1D2E081800784841 /* Sources */,
 				1168B9AC1D2E081800784841 /* Frameworks */,
 				1168B9AD1D2E081800784841 /* Headers */,
@@ -126,6 +152,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1168B9A61D2E081700784841;
@@ -147,6 +174,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F9DF53136D650D9103529063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxViewModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1168B9AB1D2E081800784841 /* Sources */ = {
@@ -251,6 +303,7 @@
 		};
 		1168B9B91D2E081800784841 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4B4DDD3B920D5AD5BC1BA2 /* Pods-RxViewModel.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -258,22 +311,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -285,7 +326,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -295,6 +336,7 @@
 		};
 		1168B9BA1D2E081800784841 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E29A646BFCC155439CB6E25 /* Pods-RxViewModel.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -302,22 +344,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -328,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
